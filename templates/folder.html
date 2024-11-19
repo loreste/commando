@@ -1,0 +1,25 @@
+{{ define "content" }}
+<div class="container">
+    <h2>File Manager</h2>
+
+    <!-- File Actions -->
+    <div class="file-actions">
+        <form id="create-folder-form">
+            <input type="text" id="folder-name" placeholder="New Folder Name" required>
+            <button type="submit">Create Folder</button>
+        </form>
+        <form id="upload-file-form" enctype="multipart/form-data">
+            <input type="file" id="file-upload" name="file" required>
+            <button type="submit">Upload File</button>
+        </form>
+    </div>
+
+    <!-- Folder List -->
+    <div class="folder-list">
+        <ul id="folder-list">
+            <!-- Dynamic folder and file list will be rendered here -->
+        </ul>
+    </div>
+</div>
+<script src="/static/js/file_manager.js"></script>
+{{ end }}

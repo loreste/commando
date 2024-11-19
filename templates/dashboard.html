@@ -1,0 +1,27 @@
+{{ define "content" }}
+<div class="container">
+    <div class="summary-cards">
+        <div class="card">
+            <h2>Total Folders</h2>
+            <p id="total-folders">0</p>
+        </div>
+        <div class="card">
+            <h2>Total Files</h2>
+            <p id="total-files">0</p>
+        </div>
+        <div class="card">
+            <h2>Users</h2>
+            <p id="total-users">0</p>
+        </div>
+    </div>
+    <div class="charts">
+        <div class="chart-container">
+            <canvas id="folderChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="userActivityChart"></canvas>
+        </div>
+    </div>
+</div>
+<script src="/static/js/dashboard.js"></script>
+{{ end }}
